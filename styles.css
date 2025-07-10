@@ -15,6 +15,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -51,8 +52,14 @@ h1{
 .content {
     flex: 1 0;
     width: 100%;
+    min-height: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    border: #ffcd03 2px solid;
+}
+.remove-btn{
+    
 }
