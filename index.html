@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="scripts.js"></script>
     <title>LIBRARY</title>
-</head>
-<body>
-    <div class="header">MY LIBRARY</div>
-    <div>content</div>
-</body>
+  </head>
+  <body>
+    <div class="header">
+      <h1>MY LIBRARY</h1>
+      <button id="dope">ADD BOOKS</button>
+      <h5 class="ur">READ: UNREAD: </h5>
+    </div>
+    <div class="content">
+      <dialog id="myDialog">
+        <form method="dialog" id="myForm">
+          <label for="bookName">Name of the Book:</label>
+          <input type="text" id="bookName" placeholder="Book name" required name="title"/>
+          <label for="auth">Name of the Author:</label>
+          <input type="text" id="auth" placeholder="Author's name" required name="writer"/>
+          <label for="pno">Number of pages: </label>
+          <input type="number" id="pno" placeholder="Number of Pages" required name="noPage"/>
+          <input type="checkbox" id="read" name="isRead">
+          <label for="read">Have you finished the Book</label>
+          <button type="submit">Submit</button>
+          <button id="toodope">Close</button>
+        </form>
+      </dialog>
+    </div>
+  </body>
 </html>
